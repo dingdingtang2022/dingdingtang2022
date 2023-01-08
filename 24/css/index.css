@@ -1,0 +1,169 @@
+body,div{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.header1{
+    background: rgb(255,192,203);
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px !important;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.top-section{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.top-section .left{
+    width: 250px;
+    height: 230px;
+    background: rgb(120,193,124);
+    color: #ffffff;
+    text-align: center;
+}
+.top-section .left1{
+    background: rgb(208,40,49);
+}
+.top-section .left2{
+    background: rgb(220, 49, 19);
+}
+.top-section .left3{
+    background: rgb(44, 160, 205);
+}
+.big-text{
+    font-size: 100px;
+    padding-top: 20px;
+}
+.big-text1{
+    font-size: 20px;
+}
+.middle, .right{
+    margin-left: 20px;
+    width: 250px;
+    font-size: 18px;
+}
+.middle-top{
+    background: rgb(164,228,167);
+    height: 110px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.middle-top1 {
+    background: rgb(189, 49, 57);
+    color: #ffffff;
+}
+.middle-top2 {
+    background: rgb(205, 75, 53);
+    color: #ffffff;
+}
+.middle-top3 {
+    background: rgb(63, 145, 177);
+    color: #ffffff;
+}
+.middle-bottom{
+    margin-top: 10px;
+}
+.right{
+    margin-left: 20px;
+}
+
+/*分页面*/
+.header{
+    text-align: center;
+    font-size: 24px;
+    margin: 36px 0;
+}
+.content{
+    /* margin-bottom: 40px; */
+    text-align: center;
+}
+.indent{
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 180%;
+    margin-bottom: 20px;
+}
+.img{
+    width: 325px;
+    height: 515px;
+    margin: 0 auto 20px;
+}
+img{
+    width: 305px;
+    height: 505px;
+}
+
+/*黑胶唱片效果begin*/
+.guangp {
+    position: relative;
+    display: inline-block;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    width: 355px;
+    height: 321px;
+    text-align: center;
+}
+ .guangp .guxz {
+    display: inline-block;
+    width: 359px;
+    height: 359px;
+    background: url(../images/99.changpian2.webp);
+}
+.guangp .dy {
+    position: absolute;
+    top: 71px;
+    right: -109px;
+    width: 85px;
+    height: 82px;
+    background: url(../images/99.changpian1.webp) no-repeat -356px -18px;
+}
+.guangp .xy {
+    position: absolute;
+    top: 71px;
+    right: -108px;
+    z-index: 3;
+    width: 85px;
+    height: 85px;
+    background: url(../images/99.changpian1.webp) no-repeat -450px -18px;
+}
+.guangp .gp {
+    position: absolute;
+    top: 115px;
+    right: -70px;
+    width: 173px;
+    height: 272px;
+    background: url(../images/99.changpian1.webp) no-repeat -350px -138px;
+    transition: all .6s ease-in-out;
+    transform: rotate(-32deg);
+    transform-origin: right top;
+}
+
+/* 黑胶旋转 */
+.guangp .xuanz {
+    animation: circleRoate 200s;
+    animation-timing-function: linear;
+}
+.guangp .gp.skewing {
+    transform: rotate(0);
+}
+@keyframes circleRoate{
+    from{
+        transform:rotate(0) infinite
+    }
+    to{
+        transform:rotate(7600deg)
+    }
+}
+/*黑胶唱片效果end*/
