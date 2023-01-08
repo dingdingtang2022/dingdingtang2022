@@ -4,7 +4,7 @@ body,div{
 }
 a{
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 .header1{
     background: rgb(255,192,203);
@@ -14,6 +14,7 @@ a{
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #ffffff;
 }
 .container{
     width: 80%;
@@ -104,66 +105,3 @@ img{
     width: 305px;
     height: 505px;
 }
-
-/*黑胶唱片效果begin*/
-.guangp {
-    position: relative;
-    display: inline-block;
-    padding-top: 80px;
-    padding-bottom: 70px;
-    width: 355px;
-    height: 321px;
-    text-align: center;
-}
- .guangp .guxz {
-    display: inline-block;
-    width: 359px;
-    height: 359px;
-    background: url(../images/99.changpian2.webp);
-}
-.guangp .dy {
-    position: absolute;
-    top: 71px;
-    right: -109px;
-    width: 85px;
-    height: 82px;
-    background: url(../images/99.changpian1.webp) no-repeat -356px -18px;
-}
-.guangp .xy {
-    position: absolute;
-    top: 71px;
-    right: -108px;
-    z-index: 3;
-    width: 85px;
-    height: 85px;
-    background: url(../images/99.changpian1.webp) no-repeat -450px -18px;
-}
-.guangp .gp {
-    position: absolute;
-    top: 115px;
-    right: -70px;
-    width: 173px;
-    height: 272px;
-    background: url(../images/99.changpian1.webp) no-repeat -350px -138px;
-    transition: all .6s ease-in-out;
-    transform: rotate(-32deg);
-    transform-origin: right top;
-}
-
-/* 黑胶旋转 */
-.guangp .xuanz {
-    animation: circleRoate 200s;
-    animation-timing-function: linear;
-}
-.guangp .gp.skewing {
-    transform: rotate(0);
-}
-@keyframes circleRoate{
-    from{
-        transform:rotate(0) infinite
-    }
-    to{
-        transform:rotate(7600deg)
-    }
-}
-/*黑胶唱片效果end*/
