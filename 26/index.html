@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Love U from A to Z</title>
+  <link href="../favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- 顶部标题 -->
+  <h1 class="page-title">Happy 26th Birthday!</h1>
+
+  <!-- 在爱心上方显示文字 -->
+  <div id="heartText" class="heart-text"></div> <!-- 显示文字的位置 -->
+
+  <!-- 顶部标签 -->
+  <div class="top-label">
+    <div class="label" data-image="I.webp">I</div>
+  </div>
+
+  <!-- 主内容区域 -->
+  <div class="main-content">
+    <!-- 左侧标签 -->
+    <div class="left-labels">
+      <div class="label" data-image="A.webp">A</div>
+      <div class="label" data-image="B.webp">B</div>
+      <div class="label" data-image="C.webp">C</div>
+      <div class="label" data-image="D.webp">D</div>
+      <div class="label" data-image="E.webp">E</div>
+      <div class="label" data-image="F.webp">F</div>
+      <div class="label" data-image="G.webp">G</div>
+      <div class="label" data-image="H.webp">H</div>
+      <div class="label" data-image="J.webp">J</div>
+      <div class="label" data-image="K.webp">K</div>
+      <div class="label" data-image="L.webp">L</div>
+      <div class="label" data-image="M.webp">M</div>
+    </div>
+
+    <!-- 中间的爱心 -->
+    <div class="heart-container">
+      <svg viewBox="0 0 100 100" class="heart">
+        <defs>
+          <clipPath id="heartClip">
+            <!-- 更圆润、扁平的爱心路径 -->
+            <path d="M 50 15 C -5 -25 -25 65 50 95 C 125 65 105 -25 50 15 Z" />
+          </clipPath>
+        </defs>
+        <image href="./images/0.webp" width="100" height="100" clip-path="url(#heartClip)"
+          preserveAspectRatio="xMidYMid slice" />
+      </svg>
+    </div>
+
+    <!-- 右侧标签 -->
+    <div class="right-labels">
+      <div class="label" data-image="N.webp">N</div>
+      <div class="label" data-image="O.webp">O</div>
+      <div class="label" data-image="P.webp">P</div>
+      <div class="label" data-image="Q.webp">Q</div>
+      <div class="label" data-image="R.webp">R</div>
+      <div class="label" data-image="S.webp">S</div>
+      <div class="label" data-image="T.webp">T</div>
+      <div class="label" data-image="V.webp">V</div>
+      <div class="label" data-image="W.webp">W</div>
+      <div class="label" data-image="X.webp">X</div>
+      <div class="label" data-image="Y.webp">Y</div>
+      <div class="label" data-image="Z.webp">Z</div>
+    </div>
+  </div>
+
+  <!-- 心电图线 -->
+  <div class="heartbeat-container">
+    <svg class="heartbeat" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+      <polyline
+        points="0,50 50,50 70,30 90,70 110,20 130,50 170,50 190,10 210,50 250,50 270,30 290,70 310,50 350,50 400,50"
+        stroke="red" fill="none" stroke-width="2" />
+    </svg>
+  </div>
+
+  <!-- 底部标签 -->
+  <div class="bottom-label">
+    <div class="label" data-image="U.webp">U</div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

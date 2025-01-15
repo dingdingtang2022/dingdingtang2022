@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(152, 255, 152, 0.2); /* 粉绿背景色，透明度为50% */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* 标签样式 */
+.label {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #ff69b4;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.label:hover {
+  background-color: #ff1493;
+}
+
+/* 顶部标签 */
+.top-label,
+.bottom-label {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+/* 左右标签 */
+.left-labels,
+.right-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 主内容布局 */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* 中间的爱心容器 */
+.heart-container {
+  width: 560px; /* 增加宽度 */
+  height: 560px; /* 增加高度 */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  /* background-color: #ff3593; */
+}
+
+.heart {
+  width: 100%;
+  height: 100%;
+  /* 保证 SVG 图像自适应 */
+}
+
+/* 显示文字的样式 */
+.heart-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff69b4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 心电图线容器 */
+.heartbeat-container {
+  position: absolute;
+  top: 60%; /* 将心电图线垂直居中 */
+  left: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none; /* 避免心电图线影响点击事件 */
+}
+
+.heartbeat {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes heartbeat {
+  0% {
+    stroke-dasharray: 0, 400;
+  }
+  100% {
+    stroke-dasharray: 400, 0;
+  }
+}
+
+.heartbeat polyline {
+  animation: heartbeat 2s linear infinite;
+}
+
+/* 文字渐变效果 */
+.page-title {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #ff6b6b,
+    /* 红色 */ #ffd166,
+    /* 黄色 */ #06d6a0,
+    /* 绿色 */ #118ab2,
+    /* 蓝色 */ #073b4c,
+    /* 深蓝 */ #6a4c93,
+    /* 紫色 */ #ff6b6b /* 红色 */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradient 5s linear infinite;
+  position: relative;
+  z-index: 2;
+}
+
+/* 文字渐变动画 */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
